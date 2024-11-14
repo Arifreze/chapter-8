@@ -1,0 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication30;
+import java.awt.*;
+import javax.swing.*;
+
+/**
+ *
+ * @author ASUS TUF
+ */
+public class JavaApplication30 extends JPanel {
+
+    /**
+     * @param args the command line arguments
+     */
+     @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        
+         g.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 24));
+        g.drawString("RED BUTTERFLY", 10, 20);
+        g.setColor(Color.BLUE);//LINE BAWAH
+        g.drawLine(30, 30, 380, 30);
+        g.setColor(Color.RED);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(30, 30, 90, 45, 45,360);
+        
+        g.setColor(Color.RED);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(150, 150, 45, 90, 45,360);
+        
+     
+        g.setColor(Color.RED);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(100, 150, 45, 90, 45,360);
+        
+        
+        g.setColor(Color.GREEN);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(90, 100, 30, 45, 45,360);
+        
+     
+        g.setColor(Color.GREEN);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(175, 100, 30, 45, 45,360);
+        
+         g.setColor(Color.BLUE);//LINE BAWAH
+        g.drawLine(150, 100, 200, 60);
+        
+        g.setColor(Color.BLUE);//LINE BAWAH
+        g.drawLine(150, 100, 100, 60);
+        
+        g.setColor(Color.WHITE);//BENDE MCM TAK CUKUP BULATAN 
+        g.fillArc(130, 120, 30, 15, 45,360);
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("RED");
+        JavaApplication30 panel = new JavaApplication30();
+
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+    
+    
+}
+    
+
